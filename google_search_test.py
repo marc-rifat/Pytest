@@ -28,4 +28,4 @@ class TestWebsite:
         search = "Selenium is fun"
         search_bar = self.browser.find_element(By.XPATH, "//textarea[@name='q']")
         search_bar.send_keys(search + Keys.ENTER)
-        assert self.browser.title.__contains__(search), f"Title does not contains {search}"
+        assert self.browser.title.__contains__(search), f"Title does not contain {search}"
